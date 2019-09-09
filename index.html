@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Kevin Tran</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script></script>
+    </head>
+
+<body class="something" id="top">
+<!-- Enova Article-->
+    <div id="enova" class="" style="background-color: #fafafa; padding-bottom: 5%;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-9">
+                    <h1 class="title">Xfinity Digital Assistant - Payment Process</h1>
+                    <h2 style="margin-top: 20px; margin-bottom: 20px;">
+                        <b>By: Kevin Tran</b><br><br>
+                        UX case study to design a user flow and interface in which users utilize a virtual assistant in a chat platform to pay a bill.
+                    </h2>
+                    <a href="https://invis.io/92TU8LMUTP3" target="_blank" class="btn btn-outline-primary">View the demo on Invision</a>
+                </div>
+                <div class="row justify-content-center" style="margin-top: 40px;margin-bottom: 25px;">
+                    <div class="col-4 col-md-4">
+                        <img src="images/example3.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="col-4 col-md-4">
+                        <img src="images/example1.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="col-4 col-md-4">
+                        <img src="images/example2.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-9">
+                    <h1>The Problem</h1>
+                    <p>55% of Xfinity’s chat requests are due to customers trying to view/pay their bill or schedule a technician to set up internet/cable.</p>
+                    <h1>The Solution</h1>
+                    <p>Xfinity will make use of virtual assistants to handle bill payments and technician scheduling issues, with all other requests being routed to a live agent.</p>
+                    <h1>The Objective</h1>
+                    <p>Facilitate the bill payment process for the user within the confines of Xfinity’s chat platform.</p>
+                    <h1>Visions</h1>
+                    <p>1. How might we utilize different forms of input besides dialog to efficiently guide the user to their goal?</p>
+                    <p>2. How might we decrease the amount of actions that the user will have to perform?</p>
+                    <h1>Competitive Research</h1>
+                    <p>Looking at competitors such as Spectrum, AT&T, and Cox, it is clear that there is a standard in virtual agent/assistant dialog flows with clear call to actions and similar user interfaces.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center" style="margin-bottom: 25px;">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <img src="images/competitors.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-9">
+                    <h1>Dialog Flow</h1>
+                    <p>To design the dialog flow for a payment process, we need to gather the information needed from the user to complete a payment.</p>
+                    <p>Information that we'll need from the user:</p>
+                    <p>- Credit/debit card number<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Name on card<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Expiration Date<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Security Code<br>
+                    - Billing Address<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Name<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Address<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Phone Number<br>
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center" style="margin-bottom: 25px;">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <img src="images/dialog-flow.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-9">
+                    <h1>Pure Dialog vs Form Input</h1>
+                    <p>A challenge that arose was deciding whether to implement a payment process that relied purely on user and chat dialog boxes or guiding the user to a payment form that they could fill out.</p>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <p style="margin-bottom: 5px;"><b>Pros of pure dialog</b></p>
+                            <ul>
+                                <li>
+                                    <p>User won't be taken to another screen</p>
+                                </li>
+                                <li>
+                                    <p>Quick payment process if all payment information is already on file</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p style="margin-bottom: 5px;"><b>Cons of pure dialog</b></p>
+                            <ul>
+                                <li>
+                                    <p>Information can get lost in chat bubbles</p>
+                                </li>
+                                <li>
+                                    <p>Difficult to make multiple edits to user information</p>
+                                </li>
+                                <li>
+                                    <p>User won't know how many stages there are to complete a payment</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="col-12 col-md-6">
+                            <p style="margin-bottom: 5px;"><b>Pros of using forms</b></p>
+                            <ul>
+                                <li>
+                                    <p>All information in one place</p>
+                                </li>
+                                <li>
+                                    <p>Easily editable information</p>
+                                </li>
+                                <li>
+                                    <p>Simple to keep track of stages in the payment process</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p style="margin-bottom: 5px;"><b>Cons of using forms</b></p>
+                            <ul>
+                                <li>
+                                    <p>Requires a different screen or window to appear</p>
+                                </li>
+                                <li>
+                                    <p>Defeats the purpose of the ease of using a chat messenger</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <h1>A combination of dialog and forms</h1>
+                        <p>That solution I'm presenting is a hybrid between a user filling out forms and confirming existing payment information. Forms will be presented to the user only when necessary. I.e., if a user needs to log in or edit their payment/billing information. Otherwise, the virtual agent will only need a simple confirmation of user information that should already be on file.</p>
+                        <p><b>If user information is already on file</b>, it will be presented to the user and simply ask for a confirmation that it is correct. In this case, the user will only have to input the security code of their card; single button presses will be sufficient to confirm the rest of the information.</p>
+                        <p><b>In the event that the user will need to input or update their payment and billing information</b>, a form will slide up within the chat window where the user can easily complete the payment process.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center" style="margin-bottom: 25px;">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <img src="images/wireframes1.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-9">
+                    <h1>High-Fidelity Mockups</h1>
+                    <p>The following are high-fidelity mockups of the UX/UI for the proposed Xfinity Virtual Assistant bill payment process. You can demo the user flow through invision by clicking <a href="https://invis.io/92TU8LMUTP3" target="_blank">here.</a></p>
+                    <p>For styling the UI, I followed the styling guidelines on Xfinity's website, specifically the customer service webpage.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center" style="margin-bottom: 25px;">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <img src="images/mockups.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <h1 style="text-align: center;">Thank you for your consideration.</h1>
+
+
+            <div align="center" style="margin-top: 60px;"> <a style="font-size: 20px;" href="#top"> Back to top </a> </div>
+
+        </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+</body>
+
+</html>
